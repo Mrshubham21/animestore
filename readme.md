@@ -80,25 +80,25 @@ https://github.com/Mrshubham21
 
 ## 🏠 Home
 
-![Home Page](screenshots/home.png)
+![Home Page](./demoimg/anime.png)
 
 ---
 
 ## 🛍️ Anime Merchandise / Products
 
-![Products Page](screenshots/products.png)
+![Products Page](./demoimg/product.png)
 
 ---
 
 ## 🔮 Upcoming
 
-![Upcoming Page](screenshots/upcoming.png)
+![Upcoming Page](./demoimg/upcomin.png)
 
 ---
 
 ## ❤️ Wishlist
 
-![Wishlist Page](screenshots/wishlist.png)
+![Wishlist Page](./demoimg/wishlist.png)
 
 ---
 
