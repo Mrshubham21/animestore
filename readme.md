@@ -98,7 +98,7 @@ https://github.com/Mrshubham21
 
 ## ❤️ Wishlist
 
-![Wishlist Page]
+![Wishlist Page](./demoimg/wishlist.png)
 
 ---
 
