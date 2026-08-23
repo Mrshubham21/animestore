@@ -1,0 +1,397 @@
+/* =========================
+   ADMIN LAYOUT
+========================= */
+
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #374663;
+}
+
+#decc{
+  color: #d1d5db;
+}
+/* =========================
+   SIDEBAR
+========================= */
+
+.admin-sidebar {
+  width: 270px;
+  background: linear-gradient(
+    180deg,
+    #111827 0%,
+    #0f172a 100%
+  );
+  color: white;
+  padding: 25px;
+  box-shadow: 4px 0 20px rgba(0,0,0,.08);
+}
+
+.admin-sidebar h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  padding-bottom: 20px;
+}
+
+.admin-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-sidebar a {
+  color: #d1d5db;
+  text-decoration: none;
+  padding: 14px 16px;
+  border-radius: 12px;
+  transition: all .3s ease;
+  font-weight: 500;
+}
+
+.admin-sidebar a:hover {
+  background: rgba(255,255,255,.08);
+  color: white;
+  transform: translateX(4px);
+}
+
+.admin-sidebar a.active {
+  background: #2563eb;
+  color: white;
+  box-shadow: 0 8px 20px rgba(37,99,235,.3);
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.admin-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   TOPBAR
+========================= */
+
+.admin-topbar {
+  height: 80px;
+  background: rgba(169, 198, 215, 0.316);
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  /* position: sticky; */
+  top: 0;
+  z-index: 100;
+}
+
+.admin-topbar h2 {
+  font-size: 24px;
+  color: #ddddea;
+  font-weight: 700;
+}
+
+.admin-user {
+  text-align: right;
+}
+
+.admin-user p:first-child {
+  margin: 0;
+  font-weight: 600;
+  color: #f2f4f8;
+}
+
+.admin-user p:last-child {
+  margin: 0;
+  font-size: 13px;
+  color: #fafcff;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.admin-main {
+  padding: 30px;
+}
+
+/* =========================
+   PAGE TITLE
+========================= */
+
+.dashboard-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 25px;
+}
+
+/* =========================
+   STATS GRID
+========================= */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* =========================
+   STAT CARD
+========================= */
+
+.stat-card {
+  background: rgba(65, 66, 62, 0.351);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.05);
+  transition: all .3s ease;
+  border: 1px solid #eef2f7;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0,0,0,.08);
+}
+
+.stat-card h3 {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.stat-card p {
+  font-size: 34px;
+  font-weight: 700;
+  color: #dde4f4;
+  margin: 0;
+}
+
+/* =========================
+   TABLES
+========================= */
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,.05);
+}
+
+.admin-table th {
+  background: #f9fafb;
+  color: #374151;
+  text-align: left;
+  padding: 16px;
+  font-size: 14px;
+}
+
+.admin-table td {
+  padding: 16px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.admin-table tr:hover {
+  background: #f9fafb;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.admin-btn {
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.btn-danger {
+  background: #dc2626;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #b91c1c;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-layout {
+    flex-direction: column;
+  }
+
+  .admin-sidebar {
+    width: 100%;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-main {
+    padding: 20px;
+  }
+  /* Admin */
+}
+.admin-products {
+  padding: 30px;
+  background: #f5f7fb;
+  min-height: 100vh;
+  color: #111827;
+}
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.admin-header h1 {
+  font-size: 2rem;
+  color: #111827;
+}
+.add-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.admin-table th {
+  background: #111827;
+  color: white;
+}
+
+.admin-table td {
+  color: #374151;
+}
+.edit-btn {
+  background: #f59e0b;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-right: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.admin-form {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  max-width: 900px;
+}
+
+.admin-form input,
+.admin-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+
+/* =========================
+   ADMIN LAYOUT FIX
+========================= */
+
+.admin-layout {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: stretch;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.admin-sidebar {
+  flex: 0 0 270px;
+  width: 270px;
+  min-width: 270px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.admin-main {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.admin-main > .admin-topbar {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.admin-main > .admin-content {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .admin-layout {
+    flex-direction: column !important;
+  }
+
+  .admin-sidebar {
+    flex: none;
+    width: 100%;
+    min-width: 100%;
+    min-height: auto;
+  }
+
+  .admin-main {
+    width: 100%;
+    min-height: auto;
+  }
+}

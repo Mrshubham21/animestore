@@ -1,0 +1,339 @@
+/* ==========================================
+UPCOMING PAGE
+========================================== */
+
+.upcoming-page{
+    background:#0f1117;
+    color:#fff;
+}
+
+/* HERO */
+
+.upcoming-hero{
+    height:90vh;
+    background:url("https://wallpapercave.com/wp/wp11440686.jpg")
+    center/cover no-repeat;
+    position:relative;
+}
+
+.hero-overlay{
+    width:100%;
+    height:100%;
+    background:linear-gradient(
+        rgba(15,17,23,.75),
+        rgba(15,17,23,.95)
+    );
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-content{
+    width:90%;
+    max-width:1200px;
+}
+
+.hero-tag{
+    display:inline-block;
+    background:rgba(255,77,141,.15);
+    color:#ff4d8d;
+    padding:8px 16px;
+    border-radius:30px;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.hero-content h1{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    width:600px;
+    max-width:100%;
+    color:#cbd5e1;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.hero-btn{
+    padding:14px 30px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.hero-btn.primary{
+    background:var(--color-accent-pink);
+    color:#fff;
+}
+
+.hero-btn.secondary{
+    border:2px solid #fff;
+    color:#fff;
+    background:transparent;
+}
+
+.hero-btn:hover{
+    transform:translateY(-3px);
+}
+
+/* FEATURED */
+
+.featured-section{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+}
+
+.featured-section h2{
+    margin-bottom:30px;
+}
+
+.featured-card{
+    display:grid;
+    grid-template-columns:400px 1fr;
+    gap:40px;
+    background:#181b24;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.featured-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.featured-content{
+    padding:35px;
+}
+
+.featured-content h2{
+    margin:15px 0;
+}
+
+.featured-content p{
+    margin:12px 0;
+    color:#d1d5db;
+}
+
+.featured-badge{
+    background:#ff4d8d;
+    padding:8px 18px;
+    border-radius:30px;
+    display:inline-block;
+}
+
+/* GRID */
+
+.anime-grid-section{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+.anime-grid-section h2{
+    margin-bottom:35px;
+}
+
+.anime-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.anime-card{
+    background:#181b24;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.35s;
+}
+
+.anime-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.45);
+}
+
+.anime-image{
+    position:relative;
+}
+
+.anime-image img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+}
+
+.anime-status{
+    position:absolute;
+    top:15px;
+    right:15px;
+    background:#ff4d8d;
+    padding:8px 15px;
+    border-radius:30px;
+    font-size:.8rem;
+}
+
+.anime-content{
+    padding:22px;
+}
+
+.anime-content h3{
+    margin-bottom:15px;
+}
+
+.anime-meta p{
+    margin:8px 0;
+    color:#d1d5db;
+}
+
+/* COUNTDOWN */
+
+.countdown{
+    display:flex;
+    gap:10px;
+    margin:18px 0;
+}
+
+.countdown span{
+    background:#262b39;
+    padding:10px 15px;
+    border-radius:8px;
+    font-weight:700;
+}
+
+.released{
+    display:inline-block;
+    margin:20px 0;
+    color:#22c55e;
+}
+
+/* BUTTONS */
+
+.anime-buttons,
+.featured-buttons{
+    display:flex;
+    gap:12px;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.trailer-btn,
+.notify-btn{
+    padding:12px 18px;
+    border-radius:10px;
+    text-decoration:none;
+    cursor:pointer;
+    border:none;
+    transition:.3s;
+}
+
+.trailer-btn{
+    background:#7c3aed;
+    color:#fff;
+}
+
+.notify-btn{
+    background:#ff4d8d;
+    color:#fff;
+}
+
+.trailer-btn:hover,
+.notify-btn:hover{
+    transform:translateY(-2px);
+}
+
+/* NEWSLETTER */
+
+.newsletter-section{
+    width:90%;
+    max-width:800px;
+    margin:100px auto;
+    text-align:center;
+}
+
+.newsletter-section h2{
+    margin-bottom:20px;
+}
+
+.newsletter-section p{
+    color:#cbd5e1;
+}
+
+.newsletter-box{
+    display:flex;
+    margin-top:30px;
+}
+
+.newsletter-box input{
+    flex:1;
+    padding:15px;
+    border:none;
+    outline:none;
+    background:#1d2230;
+    color:#fff;
+    border-radius:10px 0 0 10px;
+}
+
+.newsletter-box button{
+    padding:15px 30px;
+    background:#ff4d8d;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+    border-radius:0 10px 10px 0;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.featured-card{
+grid-template-columns:1fr;
+}
+
+.hero-content h1{
+font-size:3rem;
+}
+
+.hero-buttons{
+flex-direction:column;
+}
+
+.newsletter-box{
+flex-direction:column;
+gap:15px;
+}
+
+.newsletter-box input,
+.newsletter-box button{
+border-radius:10px;
+}
+
+}
+
+@media(max-width:600px){
+
+.hero-content h1{
+font-size:2.3rem;
+}
+
+.anime-image img{
+height:320px;
+}
+
+.hero-content{
+text-align:center;
+}
+
+}
