@@ -529,7 +529,7 @@ Through this project, I worked with:
 ### Connect With Me
 
 * 💻 GitHub: https://github.com/Mrshubham21
-* 💼 LinkedIn: Add your LinkedIn URL here
+* 💼 LinkedIn: (https://www.linkedin.com/in/shubham-singh-89a715250/)
 
 ---
 
